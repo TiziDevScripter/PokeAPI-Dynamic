@@ -4,12 +4,16 @@
 }
 body{
     margin: 0;
+    background-color: #00FFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%2300FFFF'/%3E%3Cstop offset='1' stop-color='%230000FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%2300e8ff'/%3E%3Cstop offset='1' stop-color='%231717ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%2300d1ff'/%3E%3Cstop offset='1' stop-color='%232e2eff'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%2300b9ff'/%3E%3Cstop offset='1' stop-color='%234646ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%2300a2ff'/%3E%3Cstop offset='1' stop-color='%235d5dff'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%23008bff'/%3E%3Cstop offset='1' stop-color='%237474ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%230074ff'/%3E%3Cstop offset='1' stop-color='%238b8bff'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%23005dff'/%3E%3Cstop offset='1' stop-color='%23a2a2ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%230046ff'/%3E%3Cstop offset='1' stop-color='%23b9b9ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%23002eff'/%3E%3Cstop offset='1' stop-color='%23d1d1ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%230017ff'/%3E%3Cstop offset='1' stop-color='%23e8e8ff'/%3E%3C/linearGradient%3E%3ClinearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%230000FF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 .title{
-    background-color: aqua;
-    font-size: 2.5em;
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 0;
     text-align: center;
-    text-decoration: underline;
 }
 .pokemon__container{
     width: 100%;
@@ -21,8 +25,8 @@ body{
     gap: 1.5em;
 }
 .pokemon__container .pokemon__card{
-    background-color: #aef;/*#aef*/
-    box-shadow: 0 0 2em #aef;
+    background-color: #fff;
+    box-shadow: -.1em .1em .4em #000;
     border-radius: .5em;
     border: 2px solid #fff;
 }
@@ -34,19 +38,99 @@ body{
 }
 .pokemon__container .pokemon__card .image__container img{
     width: 50%;
+    object-fit: cover;
     display: block;
 }
 .pokemon__container .pokemon__card .number{
     text-align: center;
     color: #444;
+    margin: 0;
 }
 .pokemon__container .pokemon__card .name{
     text-align: center;
     font-size: 1.2em;
+    margin-top: 0;
 }
 @media screen and (max-width: 315px) {
     .pokemon__container .pokemon__card .image__container img{
         width: 70%;
         display: block;
+    }
+}
+.change--page{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    margin: 0 auto 1em;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    padding: .5em 0;
+}
+.change--page button{
+    border: none;
+    padding: .5em 1.5em;
+    font-size: .9em;
+    font-weight: 600;
+    transition: background-color .4s;
+}
+.change--page button:hover{
+    background-color: #000;
+    color: #0ff;
+}
+.change--page button:active{
+    transition: background 0s;
+    background-color: #fff;
+    color: #0ff;
+}
+
+#loading__container{
+    background-color: #fff9;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading__box{
+    display: flex;
+    gap: 1em;
+}
+.loading{
+    width: 10px;
+    height: 12px;
+    border-radius: 50%;
+    animation: loading 1s ease-in-out infinite;
+}
+.loading1{
+    background-color: #0ff;
+    border: 1px solid #000;
+}
+.loading2{
+    background-color: #000;
+    animation-delay: .5s;
+}
+.loading3{
+    background-color: #0ff;
+    border: 1px solid #000;
+    animation-delay: 1s;
+}
+.loading4{
+    background-color: #000;
+    animation-delay: 1.5s;
+}
+
+@keyframes loading{
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-100px);
+    }
+    70%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
     }
 }
